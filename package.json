@@ -1,0 +1,14 @@
+{
+  "name": "role-select-bot",
+  "version": "1.0.0",
+  "description": "A drop-down based role select discord bot writen in discord.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hatchibombotar",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^13.6.0"
+  }
+}
