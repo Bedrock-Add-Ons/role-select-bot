@@ -20,6 +20,7 @@ client.on("messageCreate", message => {
                 const role = selectConfig.options[rolenum]
                 OptionsArray.push({ "label": message.guild.roles.cache.get(role.role).name, "value": message.guild.roles.cache.get(role.role).id })
                 if (role.emoji) OptionsArray[rolenum].emoji = role.emoji
+                if (role.description) OptionsArray[rolenum].description = role.description
             }
 
             const minValues = selectConfig.min ? selectConfig.min : 0

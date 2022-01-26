@@ -15,7 +15,7 @@ You should have a JSON array that looks something like the one below:
     {
         "name": "My Roles",
         "options": [
-            { "role": "933841152518545540", "emoji": "933841527858397225" },
+            { "role": "933841152518545540", "emoji": "933841527858397225", "description": "cool role" },
             { "role": "933841218033561600", "emoji": "933841527858397225" }
         ],
         "min": 0,
@@ -29,3 +29,5 @@ You should have a JSON array that looks something like the one below:
 `options` are the roles that you want to be selectable, containing the role and emoji IDs
 
 `min` and `max` are omitable unless you want to limit the roles that can be chosen or removed.
+
+`description` displays under the role option
