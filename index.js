@@ -8,7 +8,10 @@ client.once('ready', () => {
     console.log('Ready!')
 })
 
-client.on("messageCreate", message => { 
+client.on("messageCreate", message => {
+    message.fetch()
+    if(!message.guild) return
+    if (!message.member) return;
     if (!message.member.permissions.has(Permissions.FLAGS.ADMINISTRATOR)) return;
     if (message.content == "!createSelectRoles") {
 
